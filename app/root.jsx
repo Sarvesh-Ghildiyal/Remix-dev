@@ -1,34 +1,36 @@
-import { cssBundleHref } from "@remix-run/css-bundle";
 import {
+  Outlet,
+  Link,
   Links,
   LiveReload,
-  Meta,
-  Outlet,
   Scripts,
-  ScrollRestoration,
+  Meta,
 } from "@remix-run/react";
-
 import styles from "~/globals.css";
-
-export const links = () => [
-  { rel: "stylesheet", href: styles },
-  ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
-];
+export const links = () => [{ rel: "stylesheet", href: styles }];
 
 export default function App() {
   return (
+    <Document>
+      <Outlet />
+    </Document>
+  );
+}
+
+export function Document({ children, title }) {
+  return (
     <html lang="en">
       <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <Meta />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{title ? title : " CMS"}</title>
         <Links />
+        <Meta />
       </head>
       <body>
-        <Outlet />
-        <ScrollRestoration />
+        {children}
+        {process.env.NODE_ENV === "development" ? <LiveReload /> : null}
         <Scripts />
-        <LiveReload />
       </body>
     </html>
   );
