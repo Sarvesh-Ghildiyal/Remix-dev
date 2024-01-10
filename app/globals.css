@@ -76,7 +76,7 @@
 }
 
 .sidebar{
-  @apply bg-[#E5F3FF] sm:w-[24%] md:w-[20%] lg:w-[17%] min-h-screen h-[100%] flex flex-col
+  @apply bg-[#E5F3FF] sm:w-[24%] md:w-[20%] lg:w-[17%] min-h-screen h-auto flex flex-col
 }
 .heading{
   @apply  mt-2 mb-3 ml-5 sm:text-[1.1rem]  md:text-[1.4rem] lg:text-[1.3rem] 

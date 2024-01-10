@@ -1,10 +1,9 @@
 import { Link } from "@remix-run/react";
-import YourComponent from "../ui/navigation-link";
+import YourComponent from "../components/ui/navigation-link";
 
 export default function Header() {
   return (
     <header class="w-[85%] h-auto mx-auto mt-5 flex justify-between rounded-sm shadow-xl">
-     
       {/* Dashboard Text and SVG */}
       <div class="w-auto p-2.5">
         {/* Svg and Dashboard text */}
@@ -28,7 +27,7 @@ export default function Header() {
       </div>
 
       {/* <!-- Bell, User name, and Dropdown --> */}
-      
+
       <div class="w-auto p-2.5 flex items-center space-x-2 relative">
         {/* bell svg */}
         <svg
@@ -53,7 +52,7 @@ export default function Header() {
         </svg>
 
         {/* User name and DropDown */}
-        <YourComponent/>
+        <YourComponent />
       </div>
     </header>
   );

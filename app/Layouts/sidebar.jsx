@@ -7,7 +7,7 @@ export default function sidebar() {
     <aside className="sidebar">
 
       {/* Logo */}
-      <Link to={redirect("/users")}>
+      <Link to={"/users"}>
         <img
           className="w-[160px] h-auto mx-auto my-3"
           src={logo}
