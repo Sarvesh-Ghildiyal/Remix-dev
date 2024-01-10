@@ -9,7 +9,7 @@ export default function fillComp() {
     <Layout>
       <>
         <h2 className="underline">hello</h2>
-        <h3>i am fucking awesome</h3>
+        <h3>i am  awesome</h3>
         <h4>hi hi ha ha!</h4>
       </>
     </Layout>
