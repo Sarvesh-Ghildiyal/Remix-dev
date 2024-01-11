@@ -17,7 +17,7 @@ export default function App() {
   );
 }
 
-export function Document({ children, title }) {
+function Document({ children, title }) {
   return (
     <html lang="en">
       <head>

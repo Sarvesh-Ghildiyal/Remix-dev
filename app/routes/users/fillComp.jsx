@@ -1,5 +1,5 @@
 import Layout from '~/Layouts/Layout';
-
+import DynamicForm from '~/components/pages/form';
 export default function fillComp() {
   return (
     <Layout>
