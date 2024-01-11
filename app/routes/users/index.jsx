@@ -5,9 +5,5 @@ export const meta = () => {
 import Layout from "~/Layouts/Layout";
 
 export default function fillComp() {
-  return (
-    <Layout>
-     
-    </Layout>
-  );
+  return <Layout></Layout>;
 }

@@ -1,6 +1,5 @@
 import { Link } from "@remix-run/react";
-import YourComponent from "../components/ui/navigation-link";
-
+import YourComponent from "~/components/ui/navigation-link";
 export default function Header() {
   return (
     <header class="w-[85%] h-auto mx-auto mt-5 flex justify-between rounded-sm shadow-xl">
